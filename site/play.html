@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="/site/css/play.css">
+
+    <title>Mafia</title>
+  </head>
+  
+  <body class="bg-dark text-white">
+    <div id="rootContainer">
+      <div id="chat">
+        <div id="messagesContainer">
+        </div>
+        <div id="composerContainer">
+          <form id="composer"><input type="text" name="composerText"><button type="button" id="composerButton">Send</button></form>
+        </div>
+      </div>
+      <div id="people">
+        <table>
+          <tr id="aliveRow">
+            <th>Alive</th>
+          </tr>
+          <tr id="assassinatedRow">
+            <th>Assassinated</th>
+          </tr>
+          <tr id="executedRow">
+            <th>Executed</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Bootstrap Optional JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
+    <!-- Own Javascript-->
+    <script src="/site/js/play.js"></script>
+  </body>
+</html>

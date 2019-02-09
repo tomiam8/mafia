@@ -1,0 +1,106 @@
+#rootContainer {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    flex-basis: auto;
+}
+
+#chat {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    border-right: 0.05ch solid #999999;
+    padding: 0.5ch 1ch;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#people {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    padding: 0.5ch 1ch;
+}
+
+#composer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-basis: auto;
+    /* button-looking stuff */
+    font-weight: 400;
+    background-color: #6c757d;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: .25rem .25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    flex-wrap: false;
+}
+
+input[name=composerText] {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    background-color: transparent;
+    color: white;
+    border: 0px transparent;
+    outline: none;
+}
+
+#composerButton {
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: auto;
+    background-color: transparent;
+    color: white;
+    border: 0px transparent;
+    outline: none;
+}
+
+#messagesContainer {
+    overflow: auto;
+}
+
+#messagesContainer::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #999999;
+}
+
+#messagesContainer::-webkit-scrollbar {
+	width: 6px;
+    background-color: #999999;
+}
+
+#messagesContainer::-webkit-scrollbar-thumb {
+	background-color: #222222;
+}
+
+#people th {
+    
+}
+
+@media screen and (max-width: 100ch) {
+    #rootContainer {
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+    }
+    #chat {
+        width: 100vw;
+        border-top: 0.05ch solid #999999;
+        border-right: 0 none;
+    }
+    #people {
+        width: 100vw;
+    }
+}
